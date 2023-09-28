@@ -1,0 +1,9 @@
+$ docker container run --name my-alpine -dit alpine
+$ docker cp ./readme.txt my-alpine:/
+$ docker container exec my-alpine cat readme.txt    
+
+$ docker container cp my-alpine:/readme.txt ./download.txt
+Successfully copied 2.05kB to /Users/jre/development/docker/KodeKloudDca/2_13/download.txt
+% cat ./download.txt 
+Johannes Reitermayer
+
